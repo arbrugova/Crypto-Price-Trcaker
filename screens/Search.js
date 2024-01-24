@@ -10,8 +10,7 @@ import {
 import Coin from "../components/Coin";
 
 const apiKey = "ae53ac8e-5508-4c59-b260-3c73222c2622";
-const apiUrl =
-  "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
+const apiUrl = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -69,9 +68,9 @@ const Search = () => {
               id={item.id}
               name={item.name}
               symbol={item.symbol}
-              price={item.quote?.USD?.price || "N/A"}
-              marketCap={item.quote?.USD?.market_cap || "N/A"}
-              percentage={item.quote?.USD?.percent_change_24h || "N/A"}
+              price={item.quote?.USD?.price}
+              marketCap={item.quote?.USD?.market_cap}
+              percentage={item.quote?.USD?.percent_change_24h}
             />
           )}
         />

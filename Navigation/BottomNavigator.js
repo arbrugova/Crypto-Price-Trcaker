@@ -1,6 +1,5 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../screens/Home";
 import SearchScreen from "../screens/Search";
 import ProfileScreen from "../screens/Profile";
 import { Ionicons } from "@expo/vector-icons";
@@ -32,7 +31,7 @@ const BottomTabNavigator = () => {
     >
       <Tab.Screen
         name="Home"
-        component={CoinStackNavigator} // Use the CoinStackNavigator here
+        component={CoinStackNavigator} 
         options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" color={color} size={size} />

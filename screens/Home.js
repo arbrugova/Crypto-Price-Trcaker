@@ -33,9 +33,9 @@ const Home = () => {
       id={item.id}
       name={item.name}
       symbol={item.symbol}
-      price={item.quote?.USD?.price || 'N/A'}
-      marketCap={item.quote?.USD?.market_cap || 'N/A'}
-      percentage={item.quote?.USD?.percent_change_24h || 'N/A'}
+      price={item.quote?.USD?.price}
+      marketCap={item.quote?.USD?.market_cap}
+      percentage={item.quote?.USD?.percent_change_24h}
     />
   );
 

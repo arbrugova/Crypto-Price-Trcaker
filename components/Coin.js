@@ -1,5 +1,3 @@
-// Coin.js
-
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -34,7 +32,6 @@ const Coin = ({ id, name, symbol, price, marketCap, percentage }) => {
   const formattedMarketCap = formatMarketCapWithSuffix(marketCap);
 
   const handleCoinPress = () => {
-    // Navigate to Item page with the ID of the selected cryptocurrency
     navigation.navigate('Item', { id });
   };
 
