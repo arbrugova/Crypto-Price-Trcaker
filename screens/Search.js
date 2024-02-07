@@ -10,7 +10,8 @@ import {
 import Coin from "../components/Coin";
 
 const apiKey = "ae53ac8e-5508-4c59-b260-3c73222c2622";
-const apiUrl = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
+const apiUrl =
+  "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -21,7 +22,6 @@ const Search = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(`${apiUrl}?CMC_PRO_API_KEY=${apiKey}`);
-
         if (response.ok) {
           const data = await response.json();
           setCryptoData(data.data);
@@ -43,7 +43,7 @@ const Search = () => {
         crypto.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         crypto.symbol.toLowerCase().includes(searchTerm.toLowerCase())
     );
-  
+
     setSearchResults(filteredData);
   };
 

@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "crypto-price-tracker-7b394",
+    "staging": "crypto-price-tracker-7b394"
+  },
+  "targets": {},
+  "etags": {}
+}
